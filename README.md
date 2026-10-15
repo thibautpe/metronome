@@ -2,10 +2,15 @@
 
 Fichiers : `index.html`, `manifest.webmanifest`, `sw.js`, `icons/`.
 
+## Page de présentation
+
+Une page de présentation du projet a été ajoutée pour GitHub Pages : `docs/index.html`.
+Elle présente le pMetronome (métronome visuel) et la boîte à rythme, décrit les principales fonctionnalités et donne des liens pour tester l'application depuis ce dépôt.
+
 ## Publier sur GitHub Pages
 1. Crée un dépôt (ex. `metronome`) et envoie-y **le contenu de ce dossier** à la racine.
-2. Dépôt > Settings > Pages > Source : *Deploy from a branch*, branche `main`, dossier `/ (root)`.
-3. Après une minute : `https://<ton-pseudo>.github.io/metronome/`.
+2. Dépôt > Settings > Pages > Source : *Deploy from a branch*, branche `main`, dossier `/ (root)` ou choisir `/docs` si vous voulez servir la page de présentation `docs/index.html`.
+3. Après une minute : `https://<ton-pseudo>.github.io/metronome/` (ou `/metronome/docs/` si vous servez depuis `/docs`).
 
 ## Installer
 - PC (Chrome / Edge) : icône « Installer » dans la barre d'adresse.
@@ -17,7 +22,7 @@ Remplace `index.html` et fais un `git push` : l'appli récupère la nouvelle pag
 Change `VERSION` dans `sw.js` (ex. `metronome-v1.6.1`) seulement si tu modifies les icônes, le manifeste ou `sw.js` lui-même.
 
 - Dernière mise à jour : 2026-10-15
-- Modifications : restauration de la visibilité par défaut de Measure grid et Custom rhythm pour retrouver le comportement attendu de la v1.5, sans masquer ces outils derrière les chips d’options.
+- Modifications : ajout d'une page de présentation GitHub Pages (`docs/index.html`) présentant le pMetronome et la boîte à rythme.
 - À venir : validation des métriques de import MIDI et nettoyage fin des états de presets pour les anciennes configurations.
 
 ## Notes
