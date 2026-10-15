@@ -16,6 +16,10 @@ Fichiers : `index.html`, `manifest.webmanifest`, `sw.js`, `icons/`.
 Remplace `index.html` et fais un `git push` : l'appli récupère la nouvelle page à l'ouverture suivante quand on est en ligne (GitHub Pages peut mettre une dizaine de minutes à la servir).
 Change `VERSION` dans `sw.js` (ex. `metronome-v1.6.1`) seulement si tu modifies les icônes, le manifeste ou `sw.js` lui-même.
 
+- Dernière mise à jour : 2026-10-15
+- Modifications : restauration de la visibilité par défaut de Measure grid et Custom rhythm pour retrouver le comportement attendu de la v1.5, sans masquer ces outils derrière les chips d’options.
+- À venir : validation des métriques de import MIDI et nettoyage fin des états de presets pour les anciennes configurations.
+
 ## Notes
 - Tous les chemins sont relatifs : ça marche dans un sous-dossier (`/metronome/`).
 - Hors ligne : l'appli fonctionne après une première visite en ligne. La police Google Fonts est mise en cache à ce moment-là ; sinon une police système est utilisée.
